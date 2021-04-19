@@ -11,11 +11,11 @@
 <style>
    body {
 
-  background-image: url('images/mit.jpg');
+  background-image: url('images/campus6.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 100%;
-  color: midnightblue;
+  color:black;
 }
 
     div{
@@ -25,8 +25,8 @@
     label{
         display: inline-block;
         width:500px;
-        text-align:center;
-     
+        text-align:left;
+     font-weight:bold;
     }
        
 </style>
@@ -37,16 +37,16 @@
  </head>
 <body>
 
-
 <section class ="my-5">
   <div class="py-10">
     <h2 class="text-center">Enter details:<h2/>
   </div>
   
   <div class="w-50 m-auto">
-    <form action="dashboard.php" method=post>
+    <form action="dashboardlogin.php" method=post>
       <div class="form-group">
-        <label>Enter Verification code send to registered Email-id and Mobile Number</label>
+        <br><br><br>
+        <label>Enter Verification code send to registered Email-id and Mobile</label>
         <input type="password" name="verification" class="form-control" required>
       </div>
       <div class="form-group">

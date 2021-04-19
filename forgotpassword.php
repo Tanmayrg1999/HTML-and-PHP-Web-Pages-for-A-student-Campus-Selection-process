@@ -11,11 +11,12 @@
 <style>
    body {
 
-  background-image: url('images/mit.jpg');
+  background-image: url('images/campus6.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 100%;
-  color:midnightblue;
+    color:white;
+
 }
 
     div{
@@ -43,16 +44,16 @@
   <div class="py-10">
     <h2 class="text-center">Enter details:<h2/>
   </div>
-  <br><br><br>
+  <br>
   <div class="w-50 m-auto">
     <form action="passupdate.php" method=post>
 
       <div class="form-group">
-        <label>Enter your name</label>
+        <label>Enter name</label>
         <input type="name" name="name" class="form-control" placeholder="Louis Phillipe" required>
       </div>
       <div class="form-group">
-        <label>Enter Mobile Number</label>
+        <label>Enter Mobile </label>
         <input type="mobile" name="num" class="form-control" placeholder="9586747488" required>
       </div>
       <div class="form-group">

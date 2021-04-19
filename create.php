@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
+
+
+
   <title></title>
    <title>Create</title>
   <meta charset="utf-8">
@@ -11,7 +14,13 @@
  </head>
 <body>
 <style>
-  
+  body {
+  background-image: url('images/campus6.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  color:black;
+}
 .dark-mode {
   background-color: black;
   color: white;
@@ -28,10 +37,10 @@
   </div>
   
   <div class="w-50 m-auto">
-    <form action="passupdate.php" method=post>
+    <form onSubmit = "return checkPassword(this)" action="datastore.php" method=post>
       <div class="form-group">
         <label>Enter Your Name</label>
-        <input type="name" name="name" class="form-control">
+        <input type="name" name="name" class="form-control" >
       </div>
 
       <div class="form-group">
@@ -42,6 +51,16 @@
       <div class="form-group">
         <label>Enter Your City</label>
         <input type="name" name="city" class="form-control">
+      </div>
+
+       <div class="form-group">
+        <label>Enter Your phone number</label>
+        <input type="number" name="num" class="form-control">
+      </div>
+
+       <div class="form-group">
+        <label>Enter Your email-id</label>
+        <input type="email" name="email" class="form-control">
       </div>
 
 <div class="form-group">
@@ -73,15 +92,50 @@
 <input type="radio" id="civil" name="dept" value="Civil Engineering">
 <label for="civil">Civil Engineering</label><br>
 </div>
-
-
+ <div class="form-group">
+        <label>Enter new password</label>
+        <input type="password" name="password1" class="form-control" required>
+      </div>
+      <div class="form-group">
+        <label>Re-enter password</label>
+        <input type="password" name="password2" class="form-control" required>
+      </div>
+     
       <div>
         <button type="submit" class="btn btn-success">SUBMIT
       </div>
       
     </form>
+
+
   </div>
 </section>
+
+<script>
+
+            function checkPassword(form) {
+                password1 = form.password1.value;
+                password2 = form.password2.value;
+  
+                if (password1 == '')
+                    alert ("Please enter Password");
+                      
+                else if (password2 == '')
+                  alert ("Please enter Password");
+                      
+             else if (password1 != password2) {
+                    alert ("\nPassword did not match: Please try again...");
+                    return false;
+                }
+  
+                else{
+                    alert("Password Match!");
+                    return true;
+                }
+            }
+  </script>
+
+
 <script>
 function myFunction() {
    var element = document.body;
