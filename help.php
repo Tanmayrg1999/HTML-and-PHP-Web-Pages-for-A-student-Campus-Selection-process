@@ -1,81 +1,49 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <title>HELP</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <style>
-  .carousel-inner img {
-    width: 20vh;
-    height: 20vh;
-  }
-  .carousel-indicators {
-    margin-bottom: 8px;
-}
-
-  .carousel-indicators {
-    width: 10px;
-    height: 10px;
-    border-radius: 100%;
-    color: black;
-}
-
-  .carousel-inner {
-    height: 100%;
-}
-
-  .carousel-item {
-    text-align: center;
-}
-  .carousel-item img {
-    display: block;
-    margin: auto;
-}
-  </style>
+<meta charset="utf-8">
+<title>Display popup on page load</title>
+<link rel="stylesheet" href="swc.css">
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
+<link href="css/font-awesome.css" rel="stylesheet">
 </head>
 <body>
-
-<div id="demo" class="carousel slide" data-ride="carousel">
-
-  <!-- Indicators -->
-  <ul class="carousel-indicators">
-    <li data-target="#demo" data-slide-to="0" class="active"></li>
-    <li data-target="#demo" data-slide-to="1"></li>
-    <li data-target="#demo" data-slide-to="2"></li>
-  </ul>
-  
-  <!-- The slideshow -->
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="images/mail2.png" alt="mail" width="1100" height="500" >
-      <p>Mail</p>
-      <p>Drop us a Mail</p>
-      	
-    </div>
-    <div class="carousel-item">
-      <img src="images/phone.png" alt="phone" width="1100" height="500" >
-      <p>Contact</p>
-      <p>Contact an executive</p>
-    </div>
-    <div class="carousel-item">
-      <img src="images/sms.png" alt="sms" width="1100" height="500" >
-      <p>Message</p>
-      <p>Drop us a message</p>
-    </div>
-  </div>
-  
-  <!-- Left and right controls -->
-  <a class="carousel-control-prev" href="#demo" data-slide="prev">
-    <span class="carousel-control-prev-icon"></span>
-  </a>
-  <a class="carousel-control-next" href="#demo" data-slide="next">
-    <span class="carousel-control-next-icon"></span>
-  </a>
+<div class="maintext">
+<h2>Feedback/Enquiry</h2>
 </div>
+<div id="boxes">
+<div style="top: 50%; left: 50%; display: none;" id="dialog" class="window">
+<div id="san">
+<a href="#" class="close agree"><img src="close-icon.png" width="25" style="float:right; margin-right: -25px; margin-top: -67px;"></a>
 
+
+<div class="form-body-w3l"> 
+<form method="post" action="file.php">
+<div class="user-text-w3ls">
+<div class="w3ls-user">
+<label>Fullname</label><br>
+<input type="text" placeholder="NAME" name="name" required="required">
+<span class="icon2"><i class="fa fa-user" aria-hidden="true"></i></span>
+</div>
+<div class="w3ls-password">
+<label>Contact Number</label><br>
+<input type="text" placeholder="CONTACT NUMBER" name="contactnumber" required="required">
+<span class="icon3"><i class="fa fa-mobile" aria-hidden="true" style="    font-size: 22px;"></i></span>
+</div>
+<div class="clear"></div>
+</div>
+<div class="email-w3ls">
+<label>Your e-mail</label><br>
+<input type="email" placeholder="E-MAIL"  name="emailid" required="required">
+<span class="icon1"><i class="fa fa-envelope" aria-hidden="true"></i></span>
+</div>
+<input type="submit" name="submit"  value="Signup">
+</form>
+</div>
+</div>
+</div>
+<div style="width: 2478px; font-size: 32pt; color:white; height: 1202px; display: none; opacity: 0.4;" id="mask"></div>
+</div>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js"></script>
+<script src="swc.js"></script>
 </body>
 </html>

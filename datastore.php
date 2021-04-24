@@ -1,4 +1,4 @@
- <?php
+<?php
 
 $con=mysqli_connect('localhost','root');
 
@@ -17,6 +17,6 @@ $password=$_POST['password1'];
 $query=" insert into user_info (name,dob,city,gender,dept,email,phone,password) 
 values ('$name','$dob','$city','$gender','$dept','$email','$phone','$password')";
 mysqli_query($con,$query);
-header('location:index.php')
+header('location:login.php')
 
 ?>
