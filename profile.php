@@ -1,4 +1,11 @@
 <?php
+$mm = $_GET["id"];
+?>
+  <form>
+    <button type="submit" style="display:block;background-color:mediumseagreen;border-radius: 8px" formaction="dashboardlogin.php?id=<?php echo $mm ?>">back</button>
+  </form>
+
+<?php
 	$serverame = "localhost";
 $dbUsername = "root";
 $dbpassword = "";

@@ -55,7 +55,7 @@ $mm = "right";
   <div class="container">
     <fieldset>
 
-<h2 class="text-center" ; style="color:black;">Student Campus Process</h2>
+<h2 class="text-center" ; style="color:black;">Placement Guru</h2>
 <br>
  <div style="width:310px;height:500px;border:1px;margin: auto;background-color: #f2f2f2">
 

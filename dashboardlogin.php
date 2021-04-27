@@ -1,7 +1,7 @@
 <?php
 $mm = $_GET["id"];
 ?>
-header>
+<header>
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -254,22 +254,27 @@ header .logo span {
 }
 </style>
 
-    <div class="logo">My<span>Bank</span></div>
+    <div class="logo">Placement<span>Guru</span></div>
   </header>
   <div class="nav-btn">Menu</div>
   <div class="container">
-   
-    <div class="sidebar">
+     <div class="sidebar">
       <nav>
-        <a href="#">MY<span>Bank</span></a>
+        <br>
+         <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-2 h-2 text-white p-2 bg-purple-500 rounded-full" viewBox="0 0 24 24">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+              
+            </svg>
+        <text style="color: white"> &nbsp Placement Guru</p>
         <ul>
           <li class="active"><a href="#">Dashboard</a></li>
          
            <li><a href="profile.php?id=<?php echo $mm ?>">Profile</a></li>
-          <li><a href="money.html">Resume</a></li>
-          <li><a href="transaction.php">Edit Resume</a></li>
-          <li><a href="fixed.php">Applications</a></li>
-          <li><a href="help.php">Opportunities</a></li>
+          <li><a href="resume.php">Resume</a></li>
+          <li><a href="editresume.php?id=<?php echo $mm ?>">Create Resume</a></li>
+          <li><a href="#">Applications</a></li>
+          <li><a href="#">Opportunities</a></li>
+          <li><a href="mailto:tanmayrgaurkar@gmail.com">Contact-us</a></li>
           <li><a href="index.php">Log-Out</a></li>
         </ul>
       </nav>

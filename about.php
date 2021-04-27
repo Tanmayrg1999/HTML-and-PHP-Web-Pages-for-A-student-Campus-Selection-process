@@ -111,11 +111,10 @@ a:hover, a:active {
 }
 }
 </style>
-<form>
-    <button type="submit" style="display:block;background-color:mediumseagreen" formaction="index.php">back</button>
-  </form>
 <div class="aboutus-section">
-  
+  <form>
+    <button type="submit" style="display:block;background-color:mediumseagreen;border-radius: 8px" formaction="index.php">back</button>
+  </form>
         <div class="container">
             <div class="row">
                 <div class="col-md-3 col-sm-6 col-xs-12">
