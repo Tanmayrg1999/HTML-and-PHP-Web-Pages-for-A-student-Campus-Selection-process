@@ -14,8 +14,8 @@ if(mysqli_num_rows($res)>0){
 			$html2.=$row['DoB'];
 			$html3='Department: ';			
 			$html3.=$row['Branch'];
-			$html4='10th Percentage: ';			
-			$html4.=$row['10th Percentage'];
+			$html4='10thPercentage: ';			
+			$html4.=$row['10thPercentage'];
 			$html5='12th Percentage: ';			
 			$html5.=$row['12th Percentage'];
 			$html6='Aggregate CGPA: ';			

@@ -27,7 +27,7 @@ $project=$_POST['project'];
 $internship=$_POST['internship'];
 $address=$_POST['address'];
 
-$sam="insert into details (Name,DoB,Branch,aim,hobby,skills,projects,internships,Address,TOTAL CGPA) values ('$name','$dob','$dept','$aim','$hobby','$skill','$project','$internship','$address','$cgpa')";
+$sam="insert into details (Name,DoB,Branch,aim,hobby,skills,projects,internships,Address,10thPercentage) values ('$name','$dob','$dept','$aim','$hobby','$skill','$project','$internship','$address','$per10')";
 
 $query=" insert into details (Name,DoB,Branch,10th Percentage,12th Percentage,Semester 1 SGPA,Semester 2 SGPA,Semester 3 SGPA,Semester 4 SGPA,Semester 5 SGPA,Semester 6 SGPA,Semester 7 SGPA,Semester 8 SGPA,Total CGPA,aim,hobby,skills,projects,internships,Contact Number,Address) 
 values ('$name','$dob','$dept','$10per','$12per','$sem1','$sem2','$sem3','$sem4','$sem5','$sem6','$sem7','$sem8','$cgpa','$aim','$hobby','$skill','$project','$internship','$phone','$address')";
