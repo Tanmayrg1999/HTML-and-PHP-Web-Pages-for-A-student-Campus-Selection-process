@@ -7,8 +7,7 @@ mysqli_select_db($con,'hci');
 $name=$_POST['name'];
 $dob=$_POST['dob'];
 $phone=$_POST['num'];
-$dept=$_POST['dept'];
-$gender=$_POST['gender'];
+$dept=$_POST['dept'];		
 $per10=$_POST['10per'];
 $per12=$_POST['12per'];
 $sem1=$_POST['sem1'];
@@ -27,10 +26,10 @@ $project=$_POST['project'];
 $internship=$_POST['internship'];
 $address=$_POST['address'];
 
-$sam="insert into details (Name,DoB,Branch,aim,hobby,skills,projects,internships,Address,10thPercentage) values ('$name','$dob','$dept','$aim','$hobby','$skill','$project','$internship','$address','$per10')";
-
-$query=" insert into details (Name,DoB,Branch,10th Percentage,12th Percentage,Semester 1 SGPA,Semester 2 SGPA,Semester 3 SGPA,Semester 4 SGPA,Semester 5 SGPA,Semester 6 SGPA,Semester 7 SGPA,Semester 8 SGPA,Total CGPA,aim,hobby,skills,projects,internships,Contact Number,Address) 
-values ('$name','$dob','$dept','$10per','$12per','$sem1','$sem2','$sem3','$sem4','$sem5','$sem6','$sem7','$sem8','$cgpa','$aim','$hobby','$skill','$project','$internship','$phone','$address')";
-mysqli_query($con,$sam);
+$sam = " insert into details (Name,DoB,Branch,10Per,12Per,Sem1,Sem2,Sem3,Sem4,Sem5,Sem6,Sem7,Sem8,cgpa,aim,hobby,skills,projects,internships,Contact,Address) 
+values ('$name','$dob','$dept','$per10','$per12','$sem1','$sem2','$sem3','$sem4','$sem5','$sem6','$sem7','$sem8','$cgpa','$aim','$hobby','$skill','$project','$internship','$phone','$address')";
+$query=" insert into details (Name,DoB,Branch,10Per,12Per,Sem1,Sem2,Sem3,Sem4,Sem5,Sem6,Sem7,Sem8,cgpa,aim,hobby,skills,projects,internships,Contact,Address) 
+values ('$name','$dob','$dept','$per10','$per12','$sem1','$sem2','$sem3','$sem4','$sem5','$sem6','$sem7','$sem8','$cgpa','$aim','$hobby','$skill','$project','$internship','$phone','$address')";
+mysqli_query($con,$query);
 header('location:resume.php');
 ?>

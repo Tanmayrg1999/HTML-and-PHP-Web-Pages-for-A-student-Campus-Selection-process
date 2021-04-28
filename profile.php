@@ -1,11 +1,4 @@
 <?php
-$mm = $_GET["id"];
-?>
-  <form>
-    <button type="submit" style="display:block;background-color:mediumseagreen;border-radius: 8px" formaction="dashboardlogin.php?id=<?php echo $mm ?>">back</button>
-  </form>
-
-<?php
 	$serverame = "localhost";
 $dbUsername = "root";
 $dbpassword = "";
@@ -35,27 +28,130 @@ if(isset(($_GET["id"]))) {
 <!DOCTYPE html>
 <html>
 <head>
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<title>Profile</title>
+
+	<style>
+        body{
+            background-color: cornflowerblue;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  color:black;
+}
+.emp-profile{
+    padding: 3%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    border-radius: 0.5rem;
+    background: #fff;
+}
+
+.emp-profile h3{
+    text-align: center;
+	color: #333;
+}
+
+.profile-head h5{
+    color: #333;
+}
+.profile-head h6{
+    color: #0062cc;
+}
+
+
+.profile-tab label{
+	text-align: justify;
+	font-size: 20px;
+    font-weight: 600;
+}
+.profile-tab p{
+	text-align: justify;
+	font-size: 20px;
+    font-weight: 600;
+	
+    color: #0062cc;
+}
+    </style>
 </head>
 <body>
+<div class="container emp-profile">
+        <form method="post">
+            
+			
+				<h3>My Profile</h3>
+
+		
+            
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="tab-content profile-tab" id="myTabContent">
+                        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <label>Name</label>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <p> <?php  echo $name ?> </p>
+                                        </div>
+                                    </div>
+									<div class="row">
+                                        <div class="col-md-6">
+                                            <label>Date of Birth</label>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <p><?php  echo $dob ?></p>
+                                        </div>
+                                    </div>
+									<div class="row">
+                                        <div class="col-md-6">
+                                            <label>Gender</label>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <p><?php  echo $gender ?></p>
+                                        </div>
+                                    </div>
+									<div class="row">
+                                        <div class="col-md-6">
+                                            <label>Department</label>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <p><?php  echo $dept ?></p>
+                                        </div>
+                                    </div>
+									<div class="row">
+                                        <div class="col-md-6">
+                                            <label>City</label>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <p><?php  echo $city ?></p>
+                                        </div>
+                                    </div>
+                                    
+									<div class="row">
+                                        <div class="col-md-6">
+                                            <label>Phone Number</label>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <p><?php  echo $phone ?></p>
+                                        </div>
+                                    </div>
+										
+                                 </div>
+                                    
+                       
+                        
+                    </div>
+                </div>
+            </div>
+        </form>           
+    </div>
 
 
-<h1>MY PROFILE</h1>
-<?php
-	echo "Name : ", $name;  
-    echo "</br>";  
-	echo "Date of Birth : ", $dob;  
-    echo "</br>";  
-	echo "City : ", $city;  
-    echo "</br>";  
-	echo "Gender : ", $gender;  
-    echo "</br>";  
-	echo "Department : ", $dept;  
-    echo "</br>";  
-	echo "Email Id : ", $email;  
-    echo "</br>";  
-	echo "Phone Number : ", $phone;
-?>
+
 
 </body>
 </html>

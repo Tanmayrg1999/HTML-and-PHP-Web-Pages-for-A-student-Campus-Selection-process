@@ -272,8 +272,8 @@ header .logo span {
            <li><a href="profile.php?id=<?php echo $mm ?>">Profile</a></li>
           <li><a href="resume.php">Resume</a></li>
           <li><a href="editresume.php?id=<?php echo $mm ?>">Create Resume</a></li>
-          <li><a href="#">Applications</a></li>
-          <li><a href="#">Opportunities</a></li>
+          <li><a href="applications.php?id=<?php echo $mm ?>">Applications</a></li>
+          <li><a href="oppo.php?id=<?php echo $mm ?>">Opportunities</a></li>
           <li><a href="mailto:tanmayrgaurkar@gmail.com">Contact-us</a></li>
           <li><a href="index.php">Log-Out</a></li>
         </ul>

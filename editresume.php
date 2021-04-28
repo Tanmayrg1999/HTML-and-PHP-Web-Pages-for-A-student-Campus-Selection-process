@@ -46,16 +46,7 @@
         <input type="name" name="num" class="form-control">
       </div>
 
-<div class="form-group">
- <label>Select Gender</label>
- <br>
-<input type="radio" id="male" name="gender" value="male">
-<label for="male">Male</label><br>
-<input type="radio" id="female" name="gender" value="female">
-<label for="female">Female</label><br>
-<input type="radio" id="other" name="gender" value="other">
-<label for="other">Other</label>
-</div>
+
 
 <div class="form-group">
  <label>Select Your Department</label>
@@ -78,52 +69,52 @@
  
  <div class="form-group">
         <label>Enter Your 10th percentage</label>
-        <input type="text" name="10per" class="form-control">
+        <input type="float" name="10per" class="form-control">
       </div>
 
 <div class="form-group">
         <label>Enter Your 12th percentage</label>
-        <input type="text" name="12per" class="form-control">
+        <input type="float" name="12per" class="form-control">
       </div>
 
 <div class="form-group">
         <label>Enter Semester 1 CGPA</label>
-        <input type="text" name="sem1" class="form-control">
+        <input type="float" name="sem1" class="form-control">
       </div>
 
 <div class="form-group">
         <label>Enter Semester 2 CGPA</label>
-        <input type="text" name="sem2" class="form-control">
+        <input type="float" name="sem2" class="form-control">
       </div>
 <div class="form-group">
         <label>Enter Semester 3 CGPA</label>
-        <input type="text" name="sem3" class="form-control">
+        <input type="float" name="sem3" class="form-control">
       </div>
 
 <div class="form-group">
         <label>Enter Semester 4 CGPA</label>
-        <input type="text" name="sem4" class="form-control">
+        <input type="float" name="sem4" class="form-control">
       </div>
 
 
 
 <div class="form-group">
         <label>Enter Semester 5 CGPA</label>
-        <input type="text" name="sem5" class="form-control">
+        <input type="float" name="sem5" class="form-control">
       </div>
 
 <div class="form-group">
         <label>Enter Semester 6 CGPA</label>
-        <input type="text" name="sem6" class="form-control">
+        <input type="float" name="sem6" class="form-control">
       </div>
 <div class="form-group">
         <label>Enter Semester 7 CGPA</label>
-        <input type="text" name="sem7" class="form-control">
+        <input type="float" name="sem7" class="form-control">
       </div>
 
 <div class="form-group">
         <label>Enter Semester 8 CGPA</label>
-        <input type="text" name="sem8" class="form-control">
+        <input type="float" name="sem8" class="form-control">
       </div>
 
 
@@ -131,7 +122,7 @@
 
  <div class="form-group">
         <label>Enter Your Aggregate CGPA</label>
-        <input type="number" name="overcgpa" class="form-control">
+        <input type="float" name="overcgpa" class="form-control">
       </div>
 
 
