@@ -1,7 +1,7 @@
 <?php
 require('fpdf.php');
 
-$con=mysqli_connect('localhost','root','','hci');
+$con=mysqli_connect('localhost','root','tanmay1999','hci');
 $res=mysqli_query($con,"select * from details");
 if(mysqli_num_rows($res)>0){
 		while($row=mysqli_fetch_assoc($res)){

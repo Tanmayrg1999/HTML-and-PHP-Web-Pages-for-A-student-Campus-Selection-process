@@ -1,6 +1,6 @@
 <?php
 
-$con=mysqli_connect('localhost','root');
+$con=mysqli_connect('localhost','root','tanmay1999');
 
 mysqli_select_db($con,'hci');
 

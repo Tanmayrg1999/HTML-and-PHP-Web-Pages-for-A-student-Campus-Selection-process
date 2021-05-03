@@ -55,12 +55,12 @@ $mm = "right";
   <div class="container">
     <fieldset>
 
-<h2 class="text-center" ; style="color:black;">Placement Guru</h2>
 <br>
- <div style="width:310px;height:500px;border:1px;margin: auto;background-color: #f2f2f2">
-
+ <div style="width:330px;height:530px;border:1px;margin: auto;background-color: #f2f2f2">
  <div class="py-10">
 <br>
+<h5 class="text-center" ; style="color:black;">Placement Guru</h5>
+
         <h2 class="text-center" >Get Logged In<h2/>
   </div>
   

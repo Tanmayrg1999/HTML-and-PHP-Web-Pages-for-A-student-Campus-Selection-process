@@ -332,7 +332,7 @@ Continuously Evolve Partnerships & Measure Success. </p>
 
       <div class="panel-wrapper">
         <div class="panel-head">
-          Our Home Loans
+          How Placement Guru Helps
         </div>
         <div class="panel-body">
           Placement Guru  has helped over 600 + Job seekers  to achieve their jobs in their dream company. <br>
