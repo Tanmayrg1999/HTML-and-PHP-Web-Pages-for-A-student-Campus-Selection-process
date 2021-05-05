@@ -23,6 +23,9 @@ $rt = mysqli_fetch_array($dbresult);
 
 
 ?>
+<?php
+$mm = $_GET["id"];
+?>
 <html lang="en" >
 <head>
   <meta charset="UTF-8">

@@ -7,6 +7,13 @@ $mm = $_GET["id"];
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+</script>
+
   <style>
   .carousel-inner img {
     width: 90vh;
@@ -195,7 +202,22 @@ header .logo span {
   margin: 20px 0;
   box-shadow: 0px 1px 5px #777;
 }
-
+.new
+{
+ position: absolute;
+          top: 0%;
+           left:100%;
+          font-size:30px;
+          width:60px;
+          
+  
+}
+.dark-mode {
+  background-color: black;
+  color: white;
+  text-align: left;
+  vertical-align: left;
+}
 .main-content .panel-wrapper .panel-head {
   background-color: #00A5F2;
   color: #fff;
@@ -281,7 +303,8 @@ header .logo span {
     </div>
 
     <div class="main-content">
-      <p>Here you can stuff!</p>
+      <button class="new" style="margin: 25px;display:block;border-radius: 8px;float: right;"   onclick="myFunction()"> 🌛 </button>
+      <p style="color:dimgrey">Here you can stuff!</p>
 
 <div id="demo" class="carousel slide" data-ride="carousel">
 
@@ -297,14 +320,14 @@ header .logo span {
     <div class="carousel-item active">
       <img src="images/mymit.jpg" alt="mail" width="1100" height="500" >
       <b style="color:Tomato;">Place To Recruitments</b>
-       <p>To leave no stone unturned in our endeavour to ensure that every alumnus looks back at us and says MITAOE has not merely taught us, it has educated us.</p>
-      <p>To develop MITAOE into a world-class learning center with an excellent ambience for academics and research conjugated with vibrant environment for honing the extra and cocurricular skills of all its stake holders to enable them to meet the challenge of a fiercely competitive world.</p>
+       <p style="color:dimgrey">To leave no stone unturned in our endeavour to ensure that every alumnus looks back at us and says MITAOE has not merely taught us, it has educated us.</p>
+      <p style="color:dimgrey">To develop MITAOE into a world-class learning center with an excellent ambience for academics and research conjugated with vibrant environment for honing the extra and cocurricular skills of all its stake holders to enable them to meet the challenge of a fiercely competitive world.</p>
     </div>
     <div class="carousel-item">
       <img src="images/grad.jpg" alt="phone" width="1100" height="500" >
       <b style="color:Tomato;">Make Recruitment Your Advantage</b>
-      <p>Simplify the Evolving, Fast Moving, Multi-Faceted Recruitments.ss</b>
-      <p>Make Recruitment Your Advantage.
+      <p style="color:dimgrey">Simplify the Evolving, Fast Moving, Multi-Faceted Recruitments.ss</b>
+      <p style="color:dimgrey">Make Recruitment Your Advantage.
 Simplify the Evolving, Fast Moving, Multi-Faceted Recruitments.
 Be Efficient & Effective. Automate Mundane Work. Focus on Important Things.
 Identify Your Valuable Partners. The Right Talent. Move Fast.
@@ -315,7 +338,7 @@ Continuously Evolve Partnerships & Measure Success. </p>
     <div class="carousel-item">
       <img src="images/trans.jpg" alt="sms" width="1100" height="500" >
       <b style="color:Tomato;"> TRANSFORMING RECRUITMENTS  </b>
-      <p>Intensifying competition for talent has employers turning to technology that finds answers humans can’t.Determine present and future requirements of the organization in conjunction with its personnel planning and job analysis activities. Recruitment is the process which links the employers with the employees. Increase the pool of job candidates at minimum cost.</p>
+      <p style="color:dimgrey">Intensifying competition for talent has employers turning to technology that finds answers humans can’t.Determine present and future requirements of the organization in conjunction with its personnel planning and job analysis activities. Recruitment is the process which links the employers with the employees. Increase the pool of job candidates at minimum cost.</p>
     </div>
   </div>
   

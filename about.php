@@ -72,7 +72,7 @@ a:hover, a:active {
 
 .feature .feature-box .feature-content h4 {
     color: #0f0f0f;
-    font-size: 18px;
+    font-size: 20px;
     letter-spacing: 0;
     line-height: 22px;
     margin: 0 0 5px;
@@ -112,9 +112,6 @@ a:hover, a:active {
 }
 </style>
 <div class="aboutus-section">
-  <form>
-    <button type="submit" style="display:block;background-color:mediumseagreen;border-radius: 8px" formaction="index.php">back</button>
-  </form>
         <div class="container">
             <div class="row">
                 <div class="col-md-3 col-sm-6 col-xs-12">

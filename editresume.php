@@ -1,3 +1,7 @@
+
+<?php
+$mm = $_GET["id"];
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -396,7 +400,7 @@ header .logo span {
 
 <div class="form-group">
         <label>Hobby: </label>
-        <input type="text"  name="hobby" class="form-control">
+        <input type="text" name="hobby" class="form-control">
       </div>
 
 <div class="form-group">

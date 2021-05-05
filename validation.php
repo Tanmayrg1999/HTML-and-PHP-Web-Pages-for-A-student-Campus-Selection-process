@@ -9,7 +9,6 @@ if(count($_POST)>0) {
   $creds = 'wrong';
   if($count==0) 
   {
-
     $_SESSION["error"] = $error;
     header("location: login.php?creds=".$creds); 
 
