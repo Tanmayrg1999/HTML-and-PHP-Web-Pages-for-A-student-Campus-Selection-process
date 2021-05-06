@@ -46,7 +46,7 @@ It stores all important information related to companies, candidates and placeme
 4. Clone the repository in this location.
 5. After the setup is done we can simply open the xampp application start the Apache server and the MYSQL server.
 6. Now go to your Browser and in the url section type localhost/phpmyadmin/ and enter the password if it is set(By default no password is set). phpMyAdmin is a free software tool written in PHP, intended to handle the administration of MySQL over the Web. phpMyAdmin supports a wide range of operations on MySQL and MariaDB. Frequently used operations (managing databases, tables, columns, relations, indexes, users, permissions, etc) can be performed via the user interface, while you still have the ability to directly execute any SQL statement.
-7. Create a database and inside these database import the file user_info.sql from the repository which is present in SQL/user_info.sql.
+7. Create a database and inside these database import the file user_info.sql and company.sql from the repository which is present in SQL folder of repository.
 8. After succesfully importing the file just save all the done changes. 
 9. Go to the Browser and type localhost/Your_folder_name/index.php (in my case it is localhost/hci_project.php) and run the project.
 10. Now you are ready to create edit design your resume. Search for your opportunities and applications run throught the dashboard edit your profle and many mre excir=ting features.
