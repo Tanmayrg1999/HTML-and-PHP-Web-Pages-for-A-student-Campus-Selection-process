@@ -38,6 +38,27 @@ It stores all important information related to companies, candidates and placeme
 
 2. Sublime Text Editor:It is sophisticated text editor for code, markup and prose where one can create ,edit files in PHP,HTML etc. One can dwonload it from https://www.sublimetext.com/
 
+## Programming Languages used :
+a) FRONTEND :
+
+1. PHP: PHP is a popular general-purpose scripting language that is especially suited to web development.
+It is Fast, flexible and pragmatic, PHP powers everything from your blog to the most popular websites in the world.
+
+2. HTML: HTM or HTML is short for Hypertext Markup Language. It’s a file format used for containing HTML language which constructs a web page. This file format is based on markup codes intended to be used in Web Browsers. HTM contains formatted text, images, and other elements in a way that can be translated with web browsers. Mostly used for constructing web pages, this format is very popular among Web Designers and Web Developers.
+3. BootStrap: It is world’s most popular framework for building responsive, mobile-first sites, with jsDelivr and a template starter page.Bootstrap is a free front-end framework for faster and easier web development
+Bootstrap includes HTML and CSS based design templates for typography, forms, buttons, tables, navigation, modals, image carousels and many other, as well as optional JavaScript plugins.
+4. CSS: CSS is the language we use to style an HTML document. CSS describes how HTML elements should be displayed. Cascading Style Sheets (CSS) is a simple mechanism for adding style (e.g., fonts, colors, spacing) to Web documents.
+
+b) BACKEND:
+
+MYSQL: MYSQL is a database system used on the web
+It is a database system that runs on a server
+It is ideal for both small and large applications
+It is very fast, reliable, and easy to use
+It uses standard SQL
+It compiles on a number of platforms
+MySQL is free to download and use
+
 ## Steps to setup project:
 
 1. Download the above mentioned softwares and install them accordingly.
