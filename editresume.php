@@ -394,7 +394,7 @@ header .logo span {
 
 <div class="form-group">
         <label>Aim: </label>
-        <input type="text"  name="aim" class="form-control">
+        <input type="text" name="aim" class="form-control">
       </div>
 
 

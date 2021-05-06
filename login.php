@@ -43,9 +43,6 @@ $mm = "right";
         text-align:center;
         font-weight:bold;
     }
-    button{
-        background-color: forestgreen;
-    }
        
 </style>
  </head>
@@ -54,11 +51,14 @@ $mm = "right";
 
   <div class="container">
     <fieldset>
-
-<br>
- <div style="width:330px;height:530px;border:1px;margin: auto;background-color: #f2f2f2">
+ <div style="width:330px;height:600px;border:1px;margin: auto;background-color: #f2f2f2">
  <div class="py-10">
-<br>
+
+
+<svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="black" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-2 h-2 text-white p-2 bg-purple-500 rounded-full" viewBox="0 0 24 24">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+              
+            </svg>
 <h5 class="text-center" ; style="color:black;">Placement Guru</h5>
 
         <h2 class="text-center" >Get Logged In<h2/>
@@ -79,11 +79,15 @@ $mm = "right";
         <label >PASSWORD </label>
         <input type="password" name="password" class="form-control" style="margin: auto;width: 250px;">
       </div>
- <button type="submit" style="margin: auto;display:block;">LOGIN</button>
+ <button type="submit" style="margin: auto;display:block; border-radius: 4px; background-color: #3A8CC3;">Login</button>
  <br>
-  <button type="submit" style="margin: auto;display:block;" formaction="forgotpassword.php">FORGOT PASSWORD</button>
-  <br>
-<button type="submit" style="margin: auto;display:block;" formaction="create.php">CREATE NEW ACCOUNT</button>
+ <p style="text-align: center">-----  OR  -----</p>
+ 
+<button type="submit" style="margin: auto;display:block;background-color: forestgreen;border-radius: 4px" formaction="create.php">Create new account</button>
+    <br>   
+       <a href="forgotpassword.php"><p style="text-align: center"> Forgot password ?</p></a>
+
+       <pre>                               <a href="help.php">Need help ?</a></pre>
       </div>
     </form>
 </fieldset>

@@ -1,26 +1,16 @@
 <?php
 
-	
-
 $serverame = "localhost";
 $dbUsername = "root";
 $dbpassword = "tanmay1999";
 $dbname = "hci";
 	
 	$conn = mysqli_connect($serverame , $dbUsername , $dbpassword , $dbname );
-if(!$conn){
-	die("Connection to database Failed : ".mysql_coect_error());
-}
+
 
 $dbinfo = "SELECT C_Name, Emp_type , Position, C_description,CTC,Schedule from company ";
 $dbresult = mysqli_query($conn, $dbinfo);
 $rt = mysqli_fetch_array($dbresult);
-
-
-
-
-
-
 
 ?>
 <?php
@@ -46,7 +36,7 @@ $mm = $_GET["id"];
 
 
 body {
-	background-image: linear-gradient(45deg, #7175da, #9790F2);
+	background-image: linear-gradient(45deg, #e6e6e6,#e6e6e6);
 	font-family: 'Muli', sans-serif;
 	display: flex;
 	align-items: center;
@@ -63,7 +53,7 @@ body {
 .course {
 	background-color: #fff;
 	border-radius: 10px;
-	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+	box-shadow: 30px 30px 30px rgba(0, 0, 0, 0.2);
 	display: flex;
 	max-width: 100%;
 	margin: 20px;
@@ -151,6 +141,63 @@ body {
 	right: 30px;
 	letter-spacing: 1px;
 }
+link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style>
+  .carousel-inner img {
+    width: 90vh;
+    height: 50vh;
+border-radius: 12px;
+  }
+  .carousel-indicators {
+    margin-bottom: 8px;
+}
+
+  .carousel-indicators {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    color: black;
+}
+
+  .carousel-inner {
+    height: 100%;
+}
+
+  .carousel-item {
+    text-align: center;
+}
+  .carousel-item img {
+    display: block;
+    margin: auto;
+}
+  @import 'https://fonts.googleapis.com/css?family=Lato:300,400';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body, html {
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  height: 100%;
+  position: relative;
+}
+
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
 .nav-btn {
   width: 100%;
   height: 35px;
@@ -220,9 +267,9 @@ header .logo span {
 }
 
 .sidebar nav ul li {
-  font-size: 100%;
+  font-size: 70%;
   padding: 19px 0;  
-  
+  padding-left: 20px;
   border-bottom: 0.5px solid #111;
 }
 
@@ -274,6 +321,30 @@ header .logo span {
 .sidebar nav ul li:hover a{
   color: #fff;
 }
+
+.main-content {
+  background-color: #fafafa;
+  width: calc(100% - 250px);
+  height: 100%;
+  margin-left: 250px;
+  padding: 20px 30px;
+}
+.main-content .panel-wrapper {
+  margin: 20px 0;
+  box-shadow: 0px 1px 5px #777;
+}
+
+.main-content .panel-wrapper .panel-head {
+  background-color: #00A5F2;
+  color: #fff;
+  padding: 10px 10px;
+  border: 1px solid #00A5F2;
+}
+.main-content .panel-wrapper .panel-body {
+  padding: 20px 10px;
+  font-size: 80%;
+}
+
 @media only screen and (max-width: 420px){
   header {
     display: block;
@@ -288,6 +359,12 @@ header .logo span {
     display: none;
     margin-bottom: 40px;
     z-index: 1000;
+  }
+  .main-content {
+    width: 100%;
+    margin-left: 0;
+    z-index: -1;
+    position: relative;
   }
 }
 
@@ -305,6 +382,12 @@ header .logo span {
     display: none;
     margin-bottom: 40px;
     z-index: 1000;
+  }
+  .main-content {
+    width: 100%;
+    margin-left: 0;
+    z-index: -1;
+    position: relative;
   }
 }
 
@@ -506,6 +589,7 @@ header .logo span {
 while ($rt = mysqli_fetch_array($dbresult))  {
 ?>
 <div class="courses-container">
+	<div class="col d-flex justify-content-center">
 	<div class="course">
 		<div class="course-preview">
 			<h6></h6>
@@ -527,6 +611,7 @@ while ($rt = mysqli_fetch_array($dbresult))  {
 			<h6>345 Registrations</h6>
 		</div>
 	</div>
+</div>
 </div>
 <?php
 }

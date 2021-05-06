@@ -19,6 +19,7 @@
           <nav class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400	flex flex-wrap items-center text-base justify-center">
             <a href="index.php" class="mr-5 hover:text-gray-900">Home</a>
             <a href="about.php" class="mr-5 hover:text-gray-900">About</a>
+            <a href="help.php" class="mr-5 hover:text-gray-900">Help</a>
             <a href="tel:7218116058"><h5>Call us now</h5></a>
             <!-- <a href="" class="mr-5 hover:text-gray-900">LOGIN</a> -->
           </nav>
