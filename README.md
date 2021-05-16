@@ -15,14 +15,22 @@ It stores all important information related to companies, candidates and placeme
 
 3. Creating resume is an easy Task.
 
-4. Generated resume is in a very structured Format.
+4. Generated resume is in a very structured Format.Resume is generated in a structured way with all the aspects
+covered including aim,hobby, skills etc.
 
-5. Toggle dark mode to make app more user friendly.
+5. Toggle dark mode to make app more user friendly.It found a button which proved to be of great use as dark mode
+was quite appealing. Match between system and the real world.
 
 6. Easy way to see your profile details.
 
 7. Create, Edit and generate resume with minimal tasking
 
+8.Application had minimalist design for generating a user resume,and the generated resume was in a quite structured way.
+
+9.There was a index page where user can learn about system seek for help etc.It covered the heuristic of Flexibility and efficiency of use.
+
+10.Navigation bar found on every page allows user to access elements through
+all pages freely.Heuristic which focused was User Control and Freedom.
 
 ## Steps To Sign Up
 1. Move to the website
